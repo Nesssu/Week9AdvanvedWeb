@@ -10,12 +10,15 @@
     "cookie-parser": "^1.4.6",
     "debug": "~2.6.9",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.3",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.8.4",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
     "passport-jwt": "^4.0.1"
   }
 }
