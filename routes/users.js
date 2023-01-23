@@ -144,7 +144,11 @@ router.post('/todos', authenticateToken, (req, res, next) =>
           else
           {
             items.forEach(item => result.items.push(item));
-            return res.send("ok");
+            Todos.findOneAndUpdate({"user": result.user}, result, (er, doc) =>
+            {
+              if (er) throw er;
+              res.send("ok");
+            });
           }
 
         })
